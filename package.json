@@ -1,0 +1,34 @@
+{
+  "name": "@awgv/use-timer-hook",
+  "version": "0.0.0-development",
+  "description": "A pausable timer for React with millisecond precision; useful for notifications or buttons with delayed actions.",
+  "main": "./index.js",
+  "keywords": [
+    "react",
+    "react-hook",
+    "timer"
+  ],
+  "author": "Andrew Golubev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awgv/use-timer-hook/issues"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.33",
+    "semantic-release": "^17.0.4"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awgv/use-timer-hook.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
