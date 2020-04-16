@@ -46,17 +46,17 @@ const lookupTableForTheReducer = {
  * @typedef {Object} useTimer
  *
  * @property {boolean} timerIsRunning
- *           Returns true if a timer is running.
+ *           ⏲ Returns true if a timer is running.
  * @property {number} remainingTime
- *           Stores the time remaining.
+ *           ⏳ Stores the time remaining.
  * @property {Function} restartTimer
- *           Starts or restarts a timer.
+ *           🔁 Starts or restarts a timer.
  * @property {Function} resumeTimer
- *           Resumes a paused timer.
+ *           ⏯ Resumes a paused timer.
  * @property {Function} pauseTimer
- *           Pauses a running timer.
+ *           ⏸ Pauses a running timer.
  * @property {Function} stopTimer
- *           Completely stops a timer.
+ *           ⏹ Completely stops a timer.
  */
 
 /**
