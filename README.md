@@ -1,8 +1,7 @@
 ## @awgv/use-timer-hook
 
-<a href="https://www.npmjs.com/package/@awgv/use-timer-hook">
-  <img alt="Latest NPM version" src="https://img.shields.io/npm/v/@awgv/use-timer-hook/latest">
-</a>
+[![Latest NPM version](https://img.shields.io/npm/v/@awgv/use-timer-hook/latest)](https://www.npmjs.com/package/@awgv/use-timer-hook)
+![Total amount of NPM downloads](https://img.shields.io/npm/dt/@awgv/use-timer-hook)
 <br>
 <br>
 
