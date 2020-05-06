@@ -46,17 +46,17 @@ const lookupTableForTheReducer = {
  * @typedef {Object} useTimer
  *
  * @property {boolean} timerIsRunning
- *           ⏲ Returns true if a timer is running.
+ *           ⏲ Returns true if the timer is running.
  * @property {number} remainingTime
- *           ⏳ Stores the time remaining.
+ *           ⏳ Stores the remaining time of a running timer and updates when the timer is paused or restarted.
  * @property {Function} restartTimer
- *           🔁 Starts or restarts a timer.
+ *           🔁 Starts or restarts the timer.
  * @property {Function} resumeTimer
  *           ⏯ Resumes a paused timer.
  * @property {Function} pauseTimer
  *           ⏸ Pauses a running timer.
  * @property {Function} stopTimer
- *           ⏹ Completely stops a timer.
+ *           ⏹ Completely stops the timer.
  */
 
 /**
@@ -66,9 +66,10 @@ const lookupTableForTheReducer = {
  * @param {Object} parameter
  *        A timer’s settings.
  * @param {number} parameter.totalDurationInMilliseconds
- *        A total duration in milliseconds.
+ *        The duration, in milliseconds, the timer should wait before
+ *        `callbackToExecuteOnExpiry()` is executed.
  * @param {Function} parameter.callbackToExecuteOnExpiry
- *        A function to execute when a timer expires.
+ *        A function to be executed after the timer expires.
  *
  * @returns {useTimer}
  *          Destructurable properties: ⏲ timerIsRunning, ⏳ remainingTime,
