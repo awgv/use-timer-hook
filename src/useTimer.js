@@ -42,39 +42,6 @@ const lookupTableForTheReducer = {
   },
 }
 
-/**
- * @typedef {Object} useTimer
- *
- * @property {boolean} timerIsRunning
- *           ⏲ Returns true if the timer is running.
- * @property {number} remainingTime
- *           ⏳ Stores the remaining time of a running timer and updates when the timer is paused or restarted.
- * @property {Function} restartTimer
- *           🔁 Starts or restarts the timer.
- * @property {Function} resumeTimer
- *           ⏯ Resumes a paused timer.
- * @property {Function} pauseTimer
- *           ⏸ Pauses a running timer.
- * @property {Function} stopTimer
- *           ⏹ Completely stops the timer.
- */
-
-/**
- * A pausable timer for React with millisecond precision;
- * useful for notifications or buttons with delayed actions.
- *
- * @param {Object} parameter
- *        A timer’s settings.
- * @param {number} parameter.totalDurationInMilliseconds
- *        The duration, in milliseconds, the timer should wait before
- *        `callbackToExecuteOnExpiry()` is executed.
- * @param {Function} parameter.callbackToExecuteOnExpiry
- *        A function to be executed after the timer expires.
- *
- * @returns {useTimer}
- *          Destructurable properties: ⏲ timerIsRunning, ⏳ remainingTime,
- *          🔁 restartTimer, ⏯ resumeTimer, ⏸ pauseTimer, ⏹ stopTimer.
- */
 export const useTimer = ({
   totalDurationInMilliseconds,
   callbackToExecuteOnExpiry,

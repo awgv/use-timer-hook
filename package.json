@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "A pausable timer for React with millisecond precision; useful for notifications or buttons with delayed actions.",
   "main": "./index.js",
+  "types": "./index.d.ts",
   "keywords": [
     "react",
     "react-hook",
