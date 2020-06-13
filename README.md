@@ -29,8 +29,8 @@ export function YourComponent() {
      */
     timerIsRunning,
     /**
-     * ⏳ Stores the running timer’s remaining time and updates when the timer
-     * is paused or restarted.
+     * ⏳ Stores the running timer’s remaining time and updates
+     * when the timer is paused or restarted.
      */
     remainingTime,
     /**
