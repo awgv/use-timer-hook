@@ -16,7 +16,7 @@ const STATUSES = {
 const { RESTART_TIMER, RESUME_TIMER, PAUSE_TIMER, STOP_TIMER } = ACTIONS
 const { IS_RUNNING, IS_PAUSED, IS_STOPPED } = STATUSES
 
-const lookupTableForTheReducer = {
+const LOOKUP_TABLE = {
   [RESTART_TIMER]: function () {
     return {
       status: IS_RUNNING,
@@ -50,16 +50,12 @@ export const useTimer = ({
 
   const [state, dispatch] = useReducer(
     (state, action) => {
-      if (action.type in lookupTableForTheReducer) {
-        return lookupTableForTheReducer[action.type].call(
-          {
-            totalDurationInMilliseconds,
-          },
-          state
-        )
-      }
-
-      throw new Error('[useTimer] Invalid useReducer action type requested.')
+      return LOOKUP_TABLE[action.type].call(
+        {
+          totalDurationInMilliseconds,
+        },
+        state
+      )
     },
     {
       status: IS_STOPPED,
