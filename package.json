@@ -29,6 +29,18 @@
     "type": "git",
     "url": "https://github.com/awgv/use-timer-hook.git"
   },
+  "release": {
+      "plugins": [
+        ["@semantic-release/commit-analyzer", {
+          "preset": "angular",
+          "releaseRules": [
+            {"type": "docs", "release": "patch"},
+            {"type": "refactor", "release": "patch"},
+            {"type": "build", "release": "patch"}
+          ]
+        }]
+      ]
+  },
   "publishConfig": {
     "access": "public"
   }
