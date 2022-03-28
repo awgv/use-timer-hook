@@ -19,8 +19,8 @@
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.33",
-    "semantic-release": "^17.0.4"
+    "@types/react": "^17.0.43",
+    "semantic-release": "^19.0.2"
   },
   "scripts": {
     "semantic-release": "semantic-release"
