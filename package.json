@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.43",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^21.0.1"
   },
   "scripts": {
     "semantic-release": "semantic-release"
